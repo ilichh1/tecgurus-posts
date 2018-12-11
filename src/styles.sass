@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+ul, ol
+  list-style: none;
+
+a[routerLink]
+  text-decoration: none;
+  color: blue;
+  cursor: pointer;
+  font-size: 1.3em;
+  &:hover
+    text-decoration: underline;
+    color: red;
+
+.links
+  margin-top: 1.7em;
+  & > *
+    display: inline;
+    margin-left: 1em;
+    &::before
+      content: "* ";

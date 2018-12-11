@@ -1,0 +1,13 @@
+<div class="posts-list">
+  <h3>Listado de posts</h3>
+  <ul>
+    <li class="post" *ngFor="let post of allPosts">
+      <p>
+        <b>Title: </b> {{ post.title | slice:0:20 }}...
+      </p>
+      <p class="text-right">
+        <a [routerLink]="['/posts/detail/', post.id]">Ver detalle</a>
+      </p>
+    </li>
+  </ul>
+</div>
